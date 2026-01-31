@@ -57,7 +57,7 @@ Outfit status is shown as Unlockable
 Purpose:
 To convert abstract barter credits into clear, visual value.
 
-2️⃣ Community Outfit Feed
+### 2️⃣ Community Outfit Feed
 
 **Functionality:**
 Grid-based feed of community-created outfits (mock data)
@@ -73,7 +73,7 @@ User actions:
 Purpose:
 To drive inspiration, discovery, and social engagement.
 
-3️⃣ Saved Outfits (Favourites)
+### 3️⃣ Saved Outfits (Favourites)
 
 **Functionality:**
 Users can save outfits they like
@@ -99,34 +99,63 @@ The project follows a modular, component-driven architecture, allowing revival f
 
 99dresses/swap-style/
 ├── public/                    # Static assets
+
 ├── src/
+
 │   ├── components/
+
 │   │   ├── ui/                    # shadcn/ui primitives
+
 │   │   ├── Dashboard.tsx          # Main dashboard with tab navigation
+
 │   │   ├── outfit-builder.tsx     # Outfit builder module
+
 │   │   ├── explore-outfits.tsx    # Community outfit feed
+
 │   │   ├── saved-outfits.tsx      # Saved outfits module
+
 │   │   ├── Navbar.tsx             # Top navigation
+
 │   │   ├── ItemCard.tsx           # Reusable clothing item card
+
 │   │   └── ExchangeModal.tsx      # Simulated barter modal
+
 │   │
+
 │   ├── lib/
+
 │   │   ├── clothing-data.ts       # Mock clothing & outfit data
+
 │   │   └── utils.ts               # Utility functions
+
 │   │
+
 │   ├── hooks/
+
 │   │   └── use-toast.ts           # Toast notifications
+
 │   │
+
 │   ├── pages/                     # Route-level components
+
 │   ├── App.tsx                    # Root component with routing
+
 │   ├── main.tsx                   # Vite entry point
+
 │   └── index.css                  # Global styles + Tailwind
+
 │
+
 ├── index.html
+
 ├── vite.config.ts
+
 ├── tsconfig.json
+
 ├── tailwind.config.js
+
 ├── components.json
+
 └── package.json
 
 ## 🔄 Data Flow Overview
