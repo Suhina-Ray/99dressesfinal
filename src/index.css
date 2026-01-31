@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+/* EVERYTHING BELOW REMAINS EXACTLY THE SAME */
 
 @layer base {
   :root {
@@ -44,8 +46,8 @@
     --charcoal: 30 10% 15%;
     --warm-gray: 30 10% 45%;
 
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: "Playfair Display", serif;
+    --font-body: "DM Sans", sans-serif;
 
     --sidebar-background: 40 30% 96%;
     --sidebar-foreground: 30 10% 25%;
@@ -107,7 +109,9 @@
     font-family: var(--font-body);
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-family: var(--font-display);
   }
 }
@@ -122,7 +126,11 @@
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, hsl(var(--sage-light)) 0%, hsl(var(--cream)) 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(var(--sage-light)) 0%,
+      hsl(var(--cream)) 100%
+    );
   }
 
   .card-hover {
